@@ -14,7 +14,6 @@ public class itemmagicoservice {
     private itemmagicorepository itemMagicoRepository;
 
     public itemmagico criarItem(itemmagico itemMagico) {
-        // Validações movidas para @PrePersist/@PreUpdate na entidade
         return itemMagicoRepository.save(itemMagico);
     }
 
